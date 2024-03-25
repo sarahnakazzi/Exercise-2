@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Survey Form</title>
+  <link rel="stylesheet" href="style.css" type="text/css">
+</head>
+
+<body>
+  
+<h1 id="title">SURVEY FORM.</h1>
+<p id="description">
+  Thank you for taking this time to help us improve our community.
+</p>
+<form id="survey-form" method="post" action="url">
+  <label id="fname-label">First Name:<br>
+  <input type="text" id="fname" name="fname" placeholder ="Your first name"><br><br>
+  </label>
+  <label id="lname-label">Last Name:<br>
+  <input type="text" id="lname" name="lname"required placeholder="Your last name"><br><br>
+  </label>
+  <label id="email-label">Email:<br>
+  <input type="email" id="email" name="email" required placeholder="sarah3@gmail.com"><br><br>
+  </label>
+  <label id="password-label">Password:<br>
+  <input type="password" id="password" name="password" required minlength="8" maxlength="14" ><br><br>
+  </label>
+  <label id="number-label">Age (optional)
+  <br>
+  <input type="number" id="number" name="age" min="18" max="65" placeholder="18"><br><br>
+  </label>
+  
+  <p>Which option best describes your current role?</p>
+  
+  <select  name="btn" id="dropdown">
+    <option value="select current role" disabled>Select current role</option>
+   <option value="chairman">Chairman</option>
+   <option value="asst chairman">Asst Chairman </option>
+   <option value="defence">Defence</option>
+   <option value="rdc">RDC</option>
+   <option value="women representative">Women representative </option>
+   <option value="mobiliser">Mobiliser</option>
+   <option value="secretary">Secretary</option>
+  </select>
+  
+  <p contenteditable>Would you stand in for the village chairman?
+  </p>
+  <label for="definitely">
+  <input type="radio" name="position" id="definitely" >Definitely 
+  </lable><br>
+  <label for="maybe">
+  <input type="radio" name="position" id="maybe">Maybe
+</label><br>
+  <label for="not-sure">
+  <input type="radio"  name ="position" id="not sure" >Not sure
+  </label><br>
+  <p>What do you like about our leadership?
+  </p>
+
+   <select name="btn" id="dropdown" multiple width="260px" height="25px">
+   <option value="security">Security
+    </option>
+    <option value="unity">Unity</option>
+    <option value="service-delivery">Service delivery</option>
+    <option value="youth-support">Youth Support</option>
+    <option value="good-roads">Good roads</option>
+  </select>
+  
+  <p>
+    Which areas need improvement? (Check all that apply)
+  </p>
+  <span name=""><input type="checkbox">Health centers</span><br> 
+  <span><input type="checkbox">Roads</span><br>
+  <span><input type="checkbox">Security
+  </span><br>
+  <span><input type="checkbox">Education</span>
+  <p>For any suggestions or comments, please feel free to write it down here</p>
+  <textarea id="description" cols="38" rows="6" placeholder="Give us your comment..."></textarea>
+  <button id="submit">Submit</button>
+  </form>
+</body>
+
+</html>
